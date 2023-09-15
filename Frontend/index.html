@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" CONTENT="LONGEST - Jouez à trouver le mot le plus long, et trouvez un mot plus long que celui de vos amis">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg" sizes="16x16" href="./ressources/icon.svg">
+    <title>Longest</title>
+</head>
+<body>
+    <img id="title" src="./ressources/longest.svg">
+    <div id="wordCounterDisplay">
+        <p id="input"></p>
+        <p id="counterLetter"></p>
+    </div>
+    
+    <p id="message1" class="message">Ce mot n'existe pas !</p>
+    <p id="message2" class="message">Ce mot est plus court que ton meilleur mot !</p>
+    
+    <div id="buttons">
+        <button id="submit"><img src="./ressources/check.svg"/></button>
+        <button id="clear"><img src="./ressources/clear.svg"/></button>
+        <button id="erase" disabled = "true"><img class="disabled" src="./ressources/erase.svg"/></button>
+    </div>
+    <ul class="keyboard">
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+    </ul>
+    <ul class="keyboard">
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+        <li><button></button></li>
+    </ul>
+    <div id="result">
+        <h3>Score :</h3>
+        <div class="scoreDisplay">
+            <p id="wordScore"></p>
+            <p id="score"></p>
+        </div>
+        <div class="scoreDisplay">
+            <p id="wordMax">max</p>
+            <p id="scoreMax"></p>
+        </div>
+    </div>
+    <div id="share"><p>Partage</p><img src="./ressources/share.svg"></div>
+    <button id="rulesButton">?</button>
+
+    <!-- Pop-up -->
+    <div id="rules">
+        <div id="rulesText">
+            <h4>Règles du Longest :</h4>
+            <p>Chaque jours de nouvelles lettres apparaissent. Jouez à trouver le mot le plus long que vous puissiez faire avec ces lettres, et partagez le à vos amis !<br><br></p>
+            <p>Ce jeu est inspirez du jeu télé "le mot le plus long" et du jeu en ligne <a href="https://sutom.nocle.fr/#" target="_blank">Sutom</a>.<br><br></p>
+            <p><a href="https://twitter.com/PresqueDev" target="_blank">@PresqueDev</a> sur Twitter.</p>
+            <div id="closeDiv">
+                <button id="close"><img src="./ressources/clear.svg"/></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

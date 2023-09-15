@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #FFFDFA;
+    width: 99%;
+    height: 99%;
+    text-align: center;
+}
+
+#title{
+    width: 20%;
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 900px){
+    #title{
+        width: 75%;
+    }
+}
+
+/*--- Word ---*/
+
+#wordCounterDisplay{
+    border: solid;
+    width: 20%;
+    height: 15px;
+    padding: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+@media (max-width: 900px){
+    #wordCounterDisplay{
+        width: 75%;
+    }
+}
+
+#counterLetter{
+    float: right;
+    font-size: small;
+    line-height: 0;
+}
+
+
+#buttons{
+    display: flex;
+    flex-flow: row;
+
+    margin: auto;
+    margin-bottom: 7px;
+    margin-top: 30px;
+    
+    width: fit-content;
+    height: fit-content;
+}
+
+img{
+    width: 30px;
+}
+
+#clear img{
+    width: 28px;
+}
+
+button{
+    all: unset;
+
+    margin : 15px;
+
+    width : fit-content;
+    height : fit-content;
+}
+
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+button:disabled:hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.message{
+    display: none;
+    height: fit-content;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-family: 'Roboto', cursive;
+    font-size: small;
+}
+
+
+/*--- Keyboard ---*/
+
+ul{
+    list-style-type: none;
+    width: fit-content;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-flow: row;
+    color: black;
+}
+
+#keyboard1{
+    margin-bottom: 5px;
+}
+
+#keyboard2{
+    margin-top: 5px;
+}
+
+li button{
+    all: unset;
+
+    width: 6vh;
+    height: 6vh;
+    margin: 5px;
+
+    border: solid;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    text-transform: uppercase;
+    line-height: 6vh;
+    transition: 0.15s;
+}
+
+@media (max-width: 600px) and (min-height: 800px){
+    li button{
+        width: 5vh;
+        height: 5vh;
+        line-height: 5vh;
+    }
+}
+
+li button:hover{
+    cursor: pointer;
+}
+
+li button:disabled{
+    border-radius: 100%;
+}
+
+
+/*--- Score ---*/
+#result{
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.scoreDisplay{
+    display: flex;
+    flex-flow: row;
+
+    width: fit-content;
+
+    margin: auto;
+}
+
+#result p{
+    font-family: 'Montserrat', sans-serif;
+    
+    font-weight: 500;
+    text-transform: uppercase;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#wordScore{
+    font-size: 20px;
+}
+#score{
+    font-size: 20px;
+}
+
+#wordMax{
+    font-size: 14px;
+}
+#scoreMax{
+    font-size: 14px;
+}
+
+#share{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    
+    display: flex;
+    flex-flow: row;
+
+    width: fit-content;
+
+    margin: auto;
+    margin-top: 20px;
+}
+#share:hover{
+    cursor: pointer;
+}
+#share p{
+    margin-right: 5px;
+}
+#share img{
+    margin-left: 5px;
+}
+
+#rulesButton{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*--- Rules ---*/
+#rules{
+    text-align: left;
+    width: 99%;
+    position: absolute;
+
+    top: 150px;
+}
+
+
+#rules #rulesText{
+    display: none;
+    
+    width: 300px;
+    height: 400px;
+
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: #FFFDFA;
+    
+}
+
+#rules p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    margin: auto;
+    width: 95%;
+    
+}
+
+#rules a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    color:rgb(75, 1, 117); 
+}
+
+#rules a:visited{
+    color:rgb(75, 1, 117); 
+}
+
+#rules h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 95%;
+}
+
+
+#rules #closeDiv{
+    width: 100%;
+    text-align: center;
+}
+
+#rules #close{
+    position: relative;
+    margin-top: 30px;
+}
